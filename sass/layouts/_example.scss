@@ -1,33 +1,21 @@
-.example-list {
+.example__list {
     display: flex;
+
 }
 
-.example-section {
+.example__section {
     padding-top: 0;
 }
 
-.section-title {
-    margin-bottom: 50px;
-
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--light-theme-txt);
-}
-
-.example-item {
+.example__item {
     position: relative;
+
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
 }
 
-.example-item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.label-text {
+.example__label-text {
     font-family: "Roboto";
     font-weight: 700;
     font-size: 14px;
@@ -38,7 +26,7 @@
     color: var(--dark-theme-txt);
 }
 
-.label {
+.example__label {
     overflow: visible;
     bottom: 0;
     display: flex;

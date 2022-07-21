@@ -1,38 +1,45 @@
-.container-button {
+.portfolio__container-button {
     display: flex;
     margin-bottom: 50px;
+
+
 }
 
-.list-btn {
+.portfolio__list-btn {
     margin-right: 8px;
     border-radius: 4px;
-    transition: color var(--anim), background-color var(--anim),
-        border-radius var(--anim), border var(--anim), box-shadow var(--anim);
+    transition: color var(--anim), background-color var(--anim), border-radius var(--anim), border var(--anim), box-shadow var(--anim);
 }
 
 .btn-1 {
     margin-left: 295px;
 }
 
-.list-box {
+.portfolio__list {
+
     display: flex;
 
     flex-wrap: wrap;
 }
 
-.main-title {
-    margin-bottom: 4px;
-}
+
 
 .main-content {
     font-size: 16px;
     line-height: 1.88;
     color: var(--content-txt);
+
 }
 
-.main-box {
+.portfolio__box {
+
     margin-right: 30px;
     margin-bottom: 30px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+     }
+
 }
 
 .overlay {
@@ -40,35 +47,40 @@
     overflow: hidden;
 }
 
-.main-box:hover .main-box-overlay {
+.portfolio__box:hover .portfolio__overlay {
     transform: translateY(0);
+
+
 }
 
-.main-box:nth-child(3n) {
-    margin-right: 0;
-}
 
-.main-box-item {
+
+.portfolio__item {
+
     display: block;
     text-decoration: none;
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
 }
 
-.main-box-item:hover,
-.main-box-item:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 
-.box-content {
+
+.portfolio__box-content {
+
     padding: 20px 24px;
     border-left: 1px solid var(--borders-box);
     border-right: 1px solid var(--borders-box);
     border-bottom: 1px solid var(--borders-box);
+
+
 }
 
-.main-box-desc {
+.portfolio__desc {
     width: 370px;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -77,7 +89,8 @@
     color: var(--dark-theme-txt);
 }
 
-.main-box-overlay {
+.portfolio__overlay {
+
     position: absolute;
     top: 0;
     left: 0;

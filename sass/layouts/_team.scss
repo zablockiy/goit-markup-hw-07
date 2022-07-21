@@ -1,9 +1,11 @@
-.team-list {
+.team__list {
     display: flex;
+
 }
 
-.name-team-item {
-    font-family: "Roboto";
+
+.team__name-item {
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -11,69 +13,60 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--light-theme-txt);
+    margin-bottom: 10px;
+
 }
 
-.team-prof {
+.team__prof {
+
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--content-txt);
-}
-
-.team-box {
-    background-color: var(--white-theme-bg);
-    box-shadow: 0px 2px 1px 0px #00000033;
-    box-shadow: 0px 1px 1px 0px #00000024;
-    box-shadow: 0px 1px 3px 0px #0000001f;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-}
-
-.box-team-item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.name-team-item {
-    margin-bottom: 10px;
-}
-
-.team-prof {
     margin-bottom: 16px;
 }
 
-.team-section {
+.team__box {
+    background-color: var(--white-theme-bg);
+    box-shadow: 0px 2px 1px 0px #00000033;
+    box-shadow: 0px 1px 1px 0px #00000024;
+    box-shadow: 0px 1px 3px 0px #0000001F;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+}
+
+.team__box-item:not(:last-child) {
+    margin-right: 30px;
+
+}
+
+
+.team__section {
     background-color: var(--light-theme-bg);
 }
 
-.main-title {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: var(--light-theme-txt);
-}
-
-.team-thumb {
+.team__thumb {
     padding: 30px 0;
 }
 
-.icons-team-list {
+.team__icons-list {
     padding-inline-start: 0;
     display: flex;
     list-style: none;
     align-items: center;
     justify-content: center;
-}
 
-.icons-item-team:not(:last-child) {
+}
+.team__icons-item:not(:last-child) {
     margin-right: 10px;
+
 }
 
-.icon-link-team {
+
+
+.team__icon-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,17 +81,21 @@
     &:focus {
         background-color: var(--accent-color);
         color: var(--dark-theme-txt);
+    
+    
         }
 }
 
 
 
-.icon-team {
+.team__icon {
+
     fill: currentColor;
 
     &:hover,
     &:focus {
         fill: var(--dark-theme-txt);
         }
+
 }
 
