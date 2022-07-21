@@ -20,45 +20,46 @@
 <body>
         <!-- хедер -->
         <header class="header">
-            <div class="container header-container">
-              <a class="logo-link link" href="./index.html">
-                <span class="logo-web">Web</span>Studio
+      <div class="container header__container">
+        <a class="header__logo link" href="./index.html">
+          <span class="header__logo-web">Web</span>Studio
+        </a>
+        <nav class="header__nav">
+          <ul class="header__list list">
+            <li class="header__list-item ">
+              <a class="header__link link" href="./index.html">Студия</a>
+             
+            </li>
+            <li class="header__list-item">
+              <a class="header__link link current" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__contact">
+          <ul class="list header__contact-list">
+            <li>
+              <a class="link header__contact-link" href="mailto:info@devstudio.com">
+                <svg class="header__icon icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-mail-header"></use>
+                </svg>
+                info@devstudio.com
               </a>
-              <nav class="header-nav">
-                <ul class="header-list list">
-                  <li class="header-list-item">
-                    <a class="header-link link" href="./index.html">Студия</a>
-                  </li>
-                  <li class="header-list-item">
-                    <a class="header-link link  current" href="./portfolio.html">Портфолио</a>
-                  </li>
-                  <li class="header-list-item">
-                    <a class="header-link link" href="">Контакты</a>
-                  </li>
-                </ul>
-              </nav>
-              <div class="header-contact">
-                <ul class="list contact-list">
-                  <li>
-                    <a class="link contact-link" href="mailto:info@devstudio.com">
-                      <svg class="header-icon icon" width="16" height="12">
-                        <use href="./images/icons.svg#icon-mail-header"></use>
-                      </svg>
-                      info@devstudio.com
-                    </a>
-                  </li>
-                  <li>
-                    <a class="link contact-link" href="tel:+380961111111">
-                      <svg class="header-icon icon" width="10" height="16">
-                        <use href="./images/icons.svg#icon-tel-header"></use>
-                      </svg>
-                      +38 096 111 11 11
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </header>
+            </li>
+            <li>
+              <a class="link header__contact-link" href="tel:+380961111111">
+                <svg class="header__icon icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-tel-header"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     
     <main>
         <!-- секція портфоліо -->

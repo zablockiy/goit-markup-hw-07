@@ -1,24 +1,50 @@
 .header {
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid #ECECEC;
 }
 
-.header-container {
+.header__container {
     display: flex;
     align-items: center;
     height: 80px;
+
 }
 
-.header-nav {
+.header__nav {
     display: flex;
     margin-left: 93px;
 }
-.header-list {
+
+.header__logo-web {
+    display: flex;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+
+.header__logo {
+    display: flex;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--light-theme-txt);
+
+}
+
+.header__list {
     position: relative;
 
     display: flex;
 }
 
-.header-link {
+.header__link {
+
     display: block;
     font-weight: 500;
     line-height: 1.14;
@@ -32,48 +58,72 @@
     &:hover,
     &:focus {
         color: var(--accent-color);
+    
         }
 }
 
-
-
-.header-list-item {
+.header__list-item {
     position: relative;
+
+    &:not(:last-child) {
+        margin-right: 50px;
+        }
+
 }
 
-.header-list-item:not(:last-child) {
-    margin-right: 50px;
-}
 
-.header-contact {
+
+.header__contact {
     margin-left: auto;
 }
 
-.contact-link {
+.header__contact-link {
     margin-left: 50px;
+}
+
+.current {
+    color: var(--accent-color);
+}
+
+
+
+.header__contact-list {
+    display: flex;
+    font-weight: 500;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: var(--content-txt);
+    cursor: pointer;
+
+}
+
+.header__contact-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--content-txt);
+    transition: color var(--anim);
 
     &:hover,
     &:focus {
         color: var(--accent-color);
         }
 }
-.current {
-    color: var(--accent-color);
-}
-.header-icon {
+
+.header__icon {
     margin-right: 10px;
     fill: currentColor;
 }
 
-.contact-link.header-link:hover .header-icon,
-.contact-link.header-link:focus .header-icon {
+.header__contact-link.header__link:hover .header__icon,
+.header__contact-link.header__link:focus .header__icon {
     fill: var(--accent-color);
 }
 
 
 
-.current.header-link::after {
-    content: "";
+.current.header__link::after {
+    content: '';
     position: absolute;
     bottom: -1px;
     left: 0;
